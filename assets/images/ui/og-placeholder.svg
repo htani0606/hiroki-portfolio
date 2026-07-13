@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Hiroki T. portfolio preview</title>
+  <desc id="desc">Dark mecha cyber portfolio preview image.</desc>
+  <rect width="1200" height="630" fill="#03060b"/>
+  <radialGradient id="g" cx=".2" cy=".1" r=".8">
+    <stop offset="0" stop-color="#59a7ff" stop-opacity=".36"/>
+    <stop offset="1" stop-color="#03060b" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M0 540h1200M120 0v630M240 0v630M360 0v630M480 0v630M600 0v630M720 0v630M840 0v630M960 0v630M1080 0v630" stroke="#59a7ff" stroke-opacity=".12"/>
+  <path d="M130 90h820l120 120v330H250L130 420z" fill="#101826" fill-opacity=".82" stroke="#6fe6ff" stroke-opacity=".6" stroke-width="3"/>
+  <text x="180" y="245" fill="#6fe6ff" font-family="Avenir Next, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="8">PORTFOLIO</text>
+  <text x="180" y="340" fill="#e7f1ff" font-family="Avenir Next, Arial, sans-serif" font-size="78" font-weight="800">Hiroki T.</text>
+  <text x="184" y="405" fill="#9db3c9" font-family="Avenir Next, Arial, sans-serif" font-size="34">Apps / EA / Illusts / Musics</text>
+</svg>

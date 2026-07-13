@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">App screenshot placeholder</title>
+  <desc id="desc">Dark cyber interface placeholder for an app screenshot.</desc>
+  <rect width="1200" height="750" fill="#070b12"/>
+  <path d="M0 120h1200M0 240h1200M0 360h1200M0 480h1200M0 600h1200M150 0v750M300 0v750M450 0v750M600 0v750M750 0v750M900 0v750M1050 0v750" stroke="#59a7ff" stroke-opacity=".12"/>
+  <rect x="310" y="86" width="580" height="578" rx="46" fill="#0d1420" stroke="#6fe6ff" stroke-opacity=".55" stroke-width="3"/>
+  <rect x="354" y="142" width="492" height="84" fill="#101826" stroke="#59a7ff" stroke-opacity=".5"/>
+  <rect x="354" y="258" width="224" height="254" fill="#101826" stroke="#59a7ff" stroke-opacity=".35"/>
+  <rect x="622" y="258" width="224" height="254" fill="#101826" stroke="#59a7ff" stroke-opacity=".35"/>
+  <rect x="354" y="548" width="492" height="58" fill="#59a7ff" opacity=".78"/>
+  <text x="600" y="188" fill="#e7f1ff" font-family="Avenir Next, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">APP SCREENSHOT</text>
+  <text x="600" y="585" fill="#02111f" font-family="Avenir Next, Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">TODO: Replace Image</text>
+</svg>
