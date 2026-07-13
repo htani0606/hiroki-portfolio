@@ -1,13 +1,18 @@
 const youtubeVideos = [
   {
     id: "qq1g6BKbtHQ",
-    title: "Guitar Cover",
-    description: "ギターカバー動画や演奏記録です。",
+    title: "Guitar Cover 01",
+    category: "guitar",
   },
   {
     id: "Qu5AbLiQwzo",
+    title: "Guitar Cover 02",
+    category: "guitar",
+  },
+  {
+    id: "WO3OQ4qgBqQ",
     title: "Sound Making",
-    description: "ギターサウンドや音作りのメモです。",
+    category: "sound-making",
   },
 ];
 
@@ -36,7 +41,6 @@ function renderYouTubeCard(video) {
         <div class="youtube-card__body">
           <p class="youtube-card__kicker">YouTube</p>
           <h3 class="youtube-card__title">${video.title}</h3>
-          <p class="youtube-card__description">${video.description}</p>
         </div>
       </a>
     </article>
@@ -44,10 +48,11 @@ function renderYouTubeCard(video) {
 }
 
 function loadYouTubeCards() {
-  const container = document.querySelector("[data-youtube-list]");
-  if (!container) return;
-
-  container.innerHTML = youtubeVideos.map(renderYouTubeCard).join("");
+  document.querySelectorAll("[data-youtube-list]").forEach((container) => {
+    const category = container.dataset.youtubeList;
+    const videos = youtubeVideos.filter((video) => video.category === category);
+    container.innerHTML = videos.map(renderYouTubeCard).join("");
+  });
 }
 
 loadYouTubeCards();

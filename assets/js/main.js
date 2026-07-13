@@ -13,16 +13,14 @@ const fallbackApps = {
   6788577763: {
     artworkUrl512:
       "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9a/61/68/9a616870-a861-46ea-bc02-391cab95933c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-    description:
-      "Cyber Abyss Tactics は、サイバー世界を舞台にした iPhone 向けカード対戦ゲームです。4つの文明からデッキを選び、CPUと1対1で対戦します。",
+    description: "サイバー世界を舞台にしたiPhone向けカード対戦ゲーム。",
     trackCensoredName: "Cyber Abyss Tactics",
     trackViewUrl: "https://apps.apple.com/jp/app/cyber-abyss-tactics/id6788577763",
   },
   6782377027: {
     artworkUrl512:
       "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/85/02/04850272-e941-8f05-86ad-c61a559b32a1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-    description:
-      "Cyber Concept Paint は、キャラクター、メカ、背景、建物などのコンセプトアート制作に向けた iPhone 用ペイントアプリです。",
+    description: "コンセプトアート制作向けのiPhoneペイントアプリ。",
     trackCensoredName: "Cyber Concept Paint",
     trackViewUrl: "https://apps.apple.com/jp/app/cyber-concept-paint/id6782377027",
   },
@@ -36,7 +34,7 @@ const escapeHtml = (value) =>
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 
-const summarize = (text, maxLength = 150) => {
+const summarize = (text, maxLength = 90) => {
   const normalized = String(text ?? "").replace(/\s+/g, " ").trim();
   if (normalized.length <= maxLength) {
     return normalized;
