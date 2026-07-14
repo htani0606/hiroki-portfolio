@@ -793,10 +793,14 @@ h1 {
   font-size: clamp(32px, 5vw, 48px);
   font-weight: 800;
   line-height: 1.05;
+}
+
+.card .score-bronze {
+  color: #ffd6aa;
   text-shadow:
-    0 0 8px rgba(140, 226, 255, 0.82),
-    0 0 24px rgba(30, 146, 255, 0.64),
-    0 0 62px rgba(0, 88, 255, 0.44);
+    0 0 7px rgba(255, 201, 143, 0.72),
+    0 0 22px rgba(211, 112, 42, 0.56),
+    0 0 54px rgba(139, 58, 16, 0.4);
 }
 
 .expertise-list {
