@@ -1,18 +1,23 @@
 const youtubeVideos = [
   {
     id: "qq1g6BKbtHQ",
-    title: "Guitar Cover 01",
+    title: "Loo% Who% / Guitar & Vocal Cover [GNOSIA ED]",
     category: "guitar",
   },
   {
     id: "Qu5AbLiQwzo",
-    title: "Guitar Cover 02",
+    title: "seacret cm / Guitar & Vocal Cover [Ling Tosite Sigure]",
     category: "guitar",
   },
   {
     id: "WO3OQ4qgBqQ",
-    title: "Sound Making",
+    title: "Effects Board Setup for Ling Tosite Sigure Covers",
     category: "sound-making",
+  },
+  {
+    id: "dTQ6uPlJIDE",
+    title: "Ling Tosite Sigure PSYCHO-PASS LIVE Band Cover #3",
+    category: "live",
   },
 ];
 
@@ -27,12 +32,12 @@ function renderYouTubeCard(video) {
         href="${videoUrl}"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="${video.title}をYouTubeで見る"
+        aria-label="Watch ${video.title} on YouTube"
       >
         <div class="youtube-card__thumb">
           <img
             src="${thumbnailUrl}"
-            alt="${video.title} のサムネイル"
+            alt="Thumbnail for ${video.title}"
             loading="lazy"
           />
           <span class="youtube-card__play" aria-hidden="true">▶</span>

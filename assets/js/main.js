@@ -13,14 +13,14 @@ const fallbackApps = {
   6788577763: {
     artworkUrl512:
       "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9a/61/68/9a616870-a861-46ea-bc02-391cab95933c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-    description: "サイバー世界を舞台にしたiPhone向けカード対戦ゲーム。",
+    description: "An iPhone card battler set in a cyber world.",
     trackCensoredName: "Cyber Abyss Tactics",
     trackViewUrl: "https://apps.apple.com/jp/app/cyber-abyss-tactics/id6788577763",
   },
   6782377027: {
     artworkUrl512:
       "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/85/02/04850272-e941-8f05-86ad-c61a559b32a1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-    description: "コンセプトアート制作向けのiPhoneペイントアプリ。",
+    description: "An iPhone painting app for concept art.",
     trackCensoredName: "Cyber Concept Paint",
     trackViewUrl: "https://apps.apple.com/jp/app/cyber-concept-paint/id6782377027",
   },
@@ -42,6 +42,8 @@ const summarize = (text, maxLength = 90) => {
   return `${normalized.slice(0, maxLength).trim()}...`;
 };
 
+const containsJapanese = (text) => /[\u3005\u3040-\u30ff\u3400-\u9fff]/.test(String(text ?? ""));
+
 const renderAppCards = (apps) => {
   if (!appStoreGrid) {
     return;
@@ -51,7 +53,9 @@ const renderAppCards = (apps) => {
     .map((app) => {
       const icon = app.artworkUrl512 || app.artworkUrl100 || app.artworkUrl60;
       const name = app.trackCensoredName || app.trackName || "App Store App";
-      const summary = summarize(app.description);
+      const fallbackDescription = fallbackApps[app.trackId]?.description;
+      const description = containsJapanese(app.description) ? fallbackDescription : app.description;
+      const summary = summarize(description || fallbackDescription);
       const url = app.trackViewUrl || "#";
 
       return `
@@ -95,7 +99,7 @@ const lookupAppStoreApp = (id) =>
       cleanup();
       reject(new Error(`App Store lookup failed: ${id}`));
     };
-    script.src = `https://itunes.apple.com/lookup?id=${encodeURIComponent(id)}&country=jp&lang=ja_jp&callback=${callbackName}`;
+    script.src = `https://itunes.apple.com/lookup?id=${encodeURIComponent(id)}&country=jp&lang=en_us&callback=${callbackName}`;
     document.head.append(script);
   });
 
@@ -128,7 +132,7 @@ const loadAppStoreApps = async () => {
           <div class="work-body">
             <p class="meta-label">App Store</p>
             <h3>App Store data unavailable</h3>
-            <p>アプリ情報を取得できませんでした。時間をおいて再読み込みしてください。</p>
+            <p>Try again later.</p>
           </div>
         </article>
       `;
