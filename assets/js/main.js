@@ -10,19 +10,19 @@ document.querySelectorAll(".site-nav a").forEach((link) => {
 const appStoreGrid = document.querySelector("[data-app-store-apps]");
 
 const fallbackApps = {
-  6788577763: {
+  6787011352: {
     artworkUrl512:
-      "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9a/61/68/9a616870-a861-46ea-bc02-391cab95933c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-    description: "An iPhone card battler set in a cyber world.",
-    trackCensoredName: "Cyber Abyss Tactics",
-    trackViewUrl: "https://apps.apple.com/jp/app/cyber-abyss-tactics/id6788577763",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/e5/9f/cfe59fee-81d4-53c3-78d5-6eef661c6562/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+    description: "Plan pedal placement and signal flow at true scale before building your rig.",
+    trackCensoredName: "Pedalboard Canvas: Planner",
+    trackViewUrl: "https://apps.apple.com/jp/app/pedalboard-canvas-planner/id6787011352",
   },
-  6782377027: {
+  6771564919: {
     artworkUrl512:
-      "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/85/02/04850272-e941-8f05-86ad-c61a559b32a1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-    description: "An iPhone painting app for concept art.",
-    trackCensoredName: "Cyber Concept Paint",
-    trackViewUrl: "https://apps.apple.com/jp/app/cyber-concept-paint/id6782377027",
+      "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3a/48/32/3a483292-f8cc-ce85-788b-59f445d272ce/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    description: "A walking map for discovering unwalked streets near home.",
+    trackCensoredName: "YORUMICHI",
+    trackViewUrl: "https://apps.apple.com/jp/app/yorumichi/id6771564919",
   },
 };
 
