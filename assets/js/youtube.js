@@ -1,7 +1,7 @@
 const youtubeVideos = [
   {
-    id: "dTQ6uPlJIDE",
-    title: "Ling Tosite Sigure PSYCHO-PASS LIVE Band Cover #3",
+    id: "G_GKjkjrX9k",
+    title: "凛として時雨 Ling Tosite Sigure PSYCHO PASS LIVE band cover【20241117】",
     category: "live",
   },
 ];
