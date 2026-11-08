@@ -17,13 +17,6 @@ const fallbackApps = {
     trackCensoredName: "Pedalboard Canvas: Planner",
     trackViewUrl: "https://apps.apple.com/jp/app/pedalboard-canvas-planner/id6787011352",
   },
-  6771564919: {
-    artworkUrl512:
-      "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3a/48/32/3a483292-f8cc-ce85-788b-59f445d272ce/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
-    description: "A walking map for discovering unwalked streets near home.",
-    trackCensoredName: "YORUMICHI",
-    trackViewUrl: "https://apps.apple.com/jp/app/yorumichi/id6771564919",
-  },
 };
 
 const escapeHtml = (value) =>
