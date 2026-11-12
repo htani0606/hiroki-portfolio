@@ -332,6 +332,17 @@ h1 {
   filter: drop-shadow(0 0 22px rgba(90, 170, 255, 0.08));
 }
 
+.logo-showcase.home-artwork {
+  padding: 0;
+  overflow: hidden;
+}
+
+.home-artwork img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+}
+
 .section {
   margin-top: 48px;
 }
